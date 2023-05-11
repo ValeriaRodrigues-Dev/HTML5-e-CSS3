@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <body>
+        <h1>Imagens dinânicas</h1>
+        <p>teste em diferentes telas</p>
+
+        <picture>
+            <!-- a ordem importa -->
+            <source media="(max-width:750px)" srcset="imgs/imgP.png" type="image/png" />
+            <source media="(max-width:1050px )" srcset="imgs/imgM.png" type="image/png" />
+            <img src="imgs/imgG.png" alt="img flex" />
+        </picture>
+        <h1>Audio</h1>
+        <p>vamos adicionar um audio no site</p>
+        <h2>podcast sobre css by Estacio</h2>
+        <audio preload="metadata" autoplay controls loop>
+            <!-- testa compatibilidade (a ordem importa) -->
+            <source src="midia/true.mp4" type="audio/mp4" />
+            <source src="midia/true.mp3" type="audio/mpeg" />
+            <source src="midia/true.ogg" type="audio/ogg" />
+            <source src="midia/true.wav" type="audio/wav" />  <!--esse tipo de arquivo é extremamente pesado(evite)-->
+            <p>infelizmente seu navegador não pode reproduzir áudio <a href="midia/true.mp4"> clique aqui para baixar o arquivo MP4</a></p>
+        </audio>
+        <!-- <audio src="midia/true.mp4"></audio> inserir o audio sem os testes de compatibilidade + chance de erro-->
+      </video>
+    </body>
+</html>
