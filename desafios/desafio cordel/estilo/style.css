@@ -17,8 +17,11 @@
     --fonte-padrao: 'Prompt', Arial;
 }
 body{
-    font: 1.5em var(--fonte-padrao);
-    text-shadow: 1em 1em 1em rgba(0, 0, 0, 0.165);
+    font: 1.6em var(--fonte-padrao);
+    text-shadow: 0.9em .9em .9em rgba(0, 0, 0, 0.103);
+    overflow-x: hidden;
+    width: auto;
+    max-height: 1500px;
 }
 header{
   color: var(--cor1);
@@ -43,10 +46,10 @@ a:hover{
 
 main{
     text-align: left;
-    padding: 15px;
     font: 2em var(--fonte-cordel);
     min-width: 250px;
     margin-left: 10px;
+    padding: 15px;
   
 }
 section{
@@ -54,26 +57,34 @@ section{
     padding: 70px;
     padding-left: 5px;
 }
+section p{
+    padding-bottom: 55px;
+  
+}
 
 div#fundo1{
+    box-shadow: 5px 3px 5px 4px rgba(0, 0, 0, 0.494);
     background-image: url(imagens/background001.jpg);
-    background-size: 100%vh;
-    background-position: right center;
+    background-size: cover;
+    background-attachment: fixed;
     background-repeat: no-repeat;
     color: var(--cor1);
-    min-width: 200px;
+    min-width: 350px;
     height: 800px;
     margin: -25px;
-    padding: 25px;
-}
+    padding: 10px;
+ }
+
 
 
 div#fundo2{
+   box-shadow:  5px 3px 5px 4px rgba(0, 0, 0, 0.494);
    background-image: url(imagens/background002.jpg);
-   background-size: 100%vh;
+   background-size: cover;
+   background-attachment: fixed;
    background-repeat: no-repeat;
    color: var(--cor1);
-   min-width: 200px;
+   min-width: 250px;
    height: 800px;
    margin: -25px;
    padding: 10px;
@@ -82,16 +93,22 @@ div#fundo2{
  .fundop1{
     background-color: rgba(0, 0, 0, 0.387);
     min-width: 300px;
-    max-width: 600px;
-    padding: 25px;
-    margin: 55px;
+    max-width: 500px;
+    min-height: 485px;
+ 
+    padding: 20px;
+    margin: 50px;
+   
 }
 .fundop2{
     background-color: rgba(0, 0, 0, 0.387);
-    max-width: 600px;
-    min-width: 300px;
-    margin: 70px;
-}
+    min-width: 350px;
+    max-width: 450px;
+    height: 600px;
+    margin: 50px;
+    padding: 20px;
+ }
+
 
 
 footer{
