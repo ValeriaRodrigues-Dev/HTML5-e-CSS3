@@ -21,7 +21,6 @@ body{
     text-shadow: 0.9em .9em .9em rgba(0, 0, 0, 0.103);
     overflow-x: hidden;
     width: auto;
-    max-height: 1500px;
 }
 header{
   color: var(--cor1);
