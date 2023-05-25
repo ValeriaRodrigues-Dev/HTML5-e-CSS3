@@ -10,7 +10,7 @@
 }
 
 :root{
-    --cor0:black;
+    --cor0:rgb(48, 45, 45);
     --cor1:white;
 
     --fonte-cordel: 'Caveat', 'Courier New';
@@ -42,6 +42,7 @@ a{
 }
 a:hover{
     text-decoration: underline;
+    color:dimgray
 }
 
 main{
@@ -72,7 +73,7 @@ div#fundo1{
     min-width: 350px;
     height: 800px;
     margin: -25px;
-    padding: 10px;
+    padding: 15px;
  }
 
 
@@ -115,5 +116,9 @@ footer{
     background-color: var(--cor0);
     color: var(--cor1);
     text-align: center;
-    padding: 5px;
+    font-size: .9em;
+}
+footer > p{
+    padding: 10px;
+    margin: 0px;
 }
